@@ -4,13 +4,14 @@
   "description": "transform ipv4 to int32",
   "main": "index.js",
   "scripts": {
-    "test": "mocha",
+    "test": "./node_modules/mocha/bin/_mocha",
     "bench": "node test/index.bench.js",
     "clean": "rm -rf node_modules"
   },
   "author": "amos",
   "license": "ISC",
   "devDependencies": {
-    "chai": "^3.5.0"
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0"
   }
 }
