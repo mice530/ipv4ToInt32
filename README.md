@@ -4,11 +4,17 @@
   [![build status](https://travis-ci.org/mice530/ipv4ToInt32.svg?branch=master)](https://travis-ci.org/mice530/ipv4ToInt32)
   [![codecov](https://codecov.io/gh/mice530/ipv4ToInt32/branch/master/graph/badge.svg)](https://codecov.io/gh/mice530/ipv4ToInt32)
 ## requirements
-node.js version >= 6 (ES6 support)
+- node.js version >= 6 (ES6 support)
+```bash
+node -v
+```
+- test suites
+```bash
+npm i -g mocha istanbul
+```
 
 ## test
 > run test cases
-> 
 ```bash
 npm test
 ```
@@ -18,11 +24,10 @@ npm test
 ```bash
 npm run bench
 ```
-
 ## coverage
-> run coverage and output report to ./coverage
+> run coverage
 ```bash
-npm run cover
+istanbul cover _mocha
 ```
 
 ## clean
