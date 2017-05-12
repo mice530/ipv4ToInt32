@@ -1,5 +1,4 @@
 const ipv4toInt32 = require('../index');
-const mocha = require('mocha');
 const {assert} = require('chai');
 
 describe('ipv4toInt32', () => {
