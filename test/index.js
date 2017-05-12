@@ -1,5 +1,5 @@
 const ipv4toInt32 = require('../index');
-const {assert} = require('chai');
+const assert = require('chai').assert;
 
 describe('ipv4toInt32', () => {
   it('should handle regular input correctly', () => {
