@@ -3,7 +3,7 @@ node_js:
   - stable
   - "6"
 install:
-  - npm install -g codecov
+  - npm install -g codecov mocha istanbul
 script:
-  - npm run cover
+  - istanbul cover _mocha",
   - codecov
