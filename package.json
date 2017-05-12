@@ -1,0 +1,19 @@
+{
+  "name": "ipv4ToInt32",
+  "version": "1.0.0",
+  "description": "transform ipv4 to int32",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/_mocha",
+    "bench": "node test/index.bench.js",
+    "cover": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha",
+    "clean": "rm -rf coverage node_modules"
+  },
+  "author": "amos",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.3.0",
+    "istanbul": "^0.4.5"
+  }
+}
