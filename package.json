@@ -11,7 +11,7 @@
   },
   "author": "amos",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "chai": "^3.5.0"
   }
 }
