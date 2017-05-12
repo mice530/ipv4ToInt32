@@ -3,6 +3,8 @@
 
   [![build status](https://travis-ci.org/mice530/ipv4ToInt32.svg?branch=master)](https://travis-ci.org/mice530/ipv4ToInt32)
   [![codecov](https://codecov.io/gh/mice530/ipv4ToInt32/branch/master/graph/badge.svg)](https://codecov.io/gh/mice530/ipv4ToInt32)
+## requirements
+node.js version >= 6 (ES6 support)
 
 ## test
 > run test cases
