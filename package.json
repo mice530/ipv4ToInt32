@@ -6,6 +6,7 @@
   "scripts": {
     "test": "mocha",
     "bench": "node bench/index.js",
+    "cover": "istanbul cover _mocha",
     "clean": "rm -rf node_modules coverage"
   },
   "author": "amos",

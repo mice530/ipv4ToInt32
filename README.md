@@ -27,7 +27,7 @@ npm run bench
 ## coverage
 > run coverage
 ```bash
-istanbul cover _mocha
+npm run cover
 ```
 
 ## clean
