@@ -38,6 +38,7 @@ describe('ipv4toInt32', () => {
     assert.strictEqual( ipv4toInt32('168.5.1'), errMsg, 'test case 168.5.1 failed' );
     assert.strictEqual( ipv4toInt32('.68.5.1'), errMsg, 'test case .68.5.1 failed' );
     assert.strictEqual( ipv4toInt32('172.68.256.1'), errMsg, 'test case 172.68.256.1 failed' );
+    assert.strictEqual( ipv4toInt32('1.172.68.256.1'), errMsg, 'test case 1.172.68.256.1 failed' );
 
 
   });
