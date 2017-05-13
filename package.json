@@ -10,8 +10,5 @@
     "clean": "rm -rf node_modules coverage"
   },
   "author": "amos",
-  "license": "ISC",
-  "devDependencies": {
-    "chai": "^3.5.0"
-  }
+  "license": "ISC"
 }
