@@ -5,17 +5,19 @@ describe('ipv4toInt32', () => {
   it('should handle regular input correctly', () => {
     assert.strictEqual( ipv4toInt32('172.168.5.1'), 2896692481, 'test case 172.168.5.1 failed' );
 
-    assert.strictEqual( ipv4toInt32('0.0.0.0'), 0 );
+    assert.strictEqual( ipv4toInt32('0.0.0.0'), 0, 'test case 0.0.0.0 failed' );
 
-    assert.strictEqual( ipv4toInt32('255.255.255.255'), 4294967295, 'test case 172.168.5.1 failed' );
+    assert.strictEqual( ipv4toInt32('255.255.255.255'), 4294967295, 'test case 255.255.255.255 failed' );
   });
 
   it('should handle spaces correctly', () => {
-    assert.strictEqual( ipv4toInt32('172 .168.5.1'), 2896692481, 'test case 172.168.5.1 failed' );
+    assert.strictEqual( ipv4toInt32('172 .168.5.1'), 2896692481, 'test case 172 .168.5.1 failed' );
 
-    assert.strictEqual( ipv4toInt32('172. 168.5.1'), 2896692481, 'test case 172.168.5.1 failed' );
+    assert.strictEqual( ipv4toInt32('172. 168.5.1'), 2896692481, 'test case 172. 168.5.1 failed' );
 
-    assert.strictEqual( ipv4toInt32('172.168 . 5.1'), 2896692481, 'test case 172.168.5.1 failed' );
+    assert.strictEqual( ipv4toInt32('172.168 . 5.1'), 2896692481, 'test case 172.168 . 5.1 failed' );
+
+    assert.strictEqual( ipv4toInt32('172.168    .5.1'), 2896692481, 'test case 172.168    .5.1 failed' );
   });
 
   it('should report error on invalid input', () => {
@@ -39,6 +41,9 @@ describe('ipv4toInt32', () => {
     assert.strictEqual( ipv4toInt32('.68.5.1'), errMsg, 'test case .68.5.1 failed' );
     assert.strictEqual( ipv4toInt32('172.68.256.1'), errMsg, 'test case 172.68.256.1 failed' );
     assert.strictEqual( ipv4toInt32('1.172.68.256.1'), errMsg, 'test case 1.172.68.256.1 failed' );
+    assert.strictEqual( ipv4toInt32('68.1'), errMsg, 'test case 68.1 failed' );
+    assert.strictEqual( ipv4toInt32('1434689'), errMsg, 'test case 1434689 failed' );
+    assert.strictEqual( ipv4toInt32('-1'), errMsg, 'test case -1 failed' );
 
 
   });
